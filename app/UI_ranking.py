@@ -6,7 +6,7 @@ import pandas as pd
 # Load data
 @st.cache_data  # This will cache the data and won't reload unless the file changes.
 def load_data():
-    return pd.read_csv("data/ranking_dec.csv", index_col=0)
+    return pd.read_csv("ranking_dec.csv", index_col=0)
 
 df = load_data()
 
